@@ -1,0 +1,132 @@
+{
+  "config": "{\"version\":\"5.54\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU05\",\"version\":\"5.54\",\"type\":2},\"customTheme\":{\"name\":\"AccessibleTidal\",\"version\":\"5.54\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "531dfe2203b534ab08e8",
+      "config": "{}",
+      "name": "Pod",
+      "parameters": "[{\"name\":\"Param_Filter0a3e36d6dc157480a001\",\"boundFilter\":\"Filter0a3e36d6dc157480a001\",\"fieldExpr\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"sumBetrag\"}}}]",
+      "type": 1
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "AccessibleTidal",
+            "path": "BuiltInThemes/AccessibleTidal.json",
+            "type": 201
+          },
+          {
+            "name": "CY24SU05",
+            "path": "BaseThemes/CY24SU05.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Seite 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "254872477e7d8a9548da",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3839aeb9522e037459b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040,\"y\":240,\"z\":2000,\"width\":240,\"height\":472,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"20240527-1021721442-umsatz.Beguenstigter/Zahlungspflichtiger\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"main\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"},\"Name\":\"20240527-1021721442-umsatz.Beguenstigter/Zahlungspflichtiger\",\"NativeReferenceName\":\"Beguenstigter/Zahlungspflichtiger\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"-583.5914966349749D\"}}},\"numericEnd\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"main\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"''\"}}]]}}}}}]}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 472.00,
+          "width": 240.00,
+          "x": 1040.00,
+          "y": 240.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"85391b4d1d00c07bbbd0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040,\"y\":24,\"z\":1000,\"width\":240,\"height\":104,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"main.zahlart\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"main\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"zahlart\"},\"Name\":\"main.zahlart\",\"NativeReferenceName\":\"zahlart\"}]},\"columnProperties\":{\"20240527-1021721442-umsatz.Betrag\":{\"displayName\":\"Ausgaben\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"numericEnd\":{\"expr\":{\"Literal\":{\"Value\":\"1175.4310278782723D\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 104.00,
+          "width": 240.00,
+          "x": 1040.00,
+          "y": 24.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b2fff8ee19781e242511\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1000,\"height\":712,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Rows\":[{\"queryRef\":\"main.Beguenstigter/Zahlungspflichtiger\"}],\"Y\":[{\"queryRef\":\"CountNonNull(main.Betrag)\"}],\"Category\":[{\"queryRef\":\"main.zahlart\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"Min(main.Verwendungszweck)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"main\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"},\"Name\":\"main.Beguenstigter/Zahlungspflichtiger\",\"NativeReferenceName\":\"Beguenstigter/Zahlungspflichtiger\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Betrag\"}},\"Function\":0},\"Name\":\"CountNonNull(main.Betrag)\",\"NativeReferenceName\":\"Summe von Betrag\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"zahlart\"},\"Name\":\"main.zahlart\",\"NativeReferenceName\":\"zahlart\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Verwendungszweck\"}},\"Function\":5},\"Name\":\"Min(main.Verwendungszweck)\",\"NativeReferenceName\":\"Anzahl von Verwendungszweck\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Betrag\"}},\"Function\":0}},\"Scope\":[{\"RoleRef\":{\"Role\":\"Rows\"}}]}}}]},\"columnProperties\":{\"Min(main.Verwendungszweck)\":{\"displayName\":\"#Transaktionen\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#6D2D0F'\"}}}}}},\"selector\":{\"data\":[{\"roles\":[\"Rows\"]},{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"zahlart\"}},\"Right\":{\"Literal\":{\"Value\":\"'Ausgabe'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"roles\":[\"Rows\"]},{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"zahlart\"}},\"Right\":{\"Literal\":{\"Value\":\"'Einnahme'\"}}}}}]}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelOrientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Above'\"}}},\"labelContentLayout\":{\"expr\":{\"Literal\":{\"Value\":\"'SingleLine'\"}}},\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableTitleDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"smallMultiplesLayout\":[{\"properties\":{\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}],\"subheader\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 712.00,
+          "width": 1000.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Seite 1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter0a3e36d6dc157480a001\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"sumBetrag\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "531dfe2203b534ab08e8",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"5ba8621e641d20d00447\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":4000,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5da2a7d3d9d8ee06b306\",\"layouts\":[{\"id\":0,\"position\":{\"x\":448,\"y\":24,\"z\":1000,\"width\":592,\"height\":688,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"20240527-1021721442-umsatz.Beguenstigter/Zahlungspflichtiger\",\"active\":true},{\"queryRef\":\"20240527-1021721442-umsatz.zahlart\"},{\"queryRef\":\"20240527-1021721442-umsatz.Buchungstext\"},{\"queryRef\":\"20240527-1021721442-umsatz.Verwendungszweck\"}],\"Columns\":[{\"queryRef\":\"20240527-1021721442-umsatz.zahlart\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(20240527-1021721442-umsatz.Betrag)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"main\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"},\"Name\":\"20240527-1021721442-umsatz.Beguenstigter/Zahlungspflichtiger\",\"NativeReferenceName\":\"Beguenstigter/Zahlungspflichtiger\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Buchungstext\"},\"Name\":\"20240527-1021721442-umsatz.Buchungstext\",\"NativeReferenceName\":\"Buchungstext\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"zahlart\"},\"Name\":\"20240527-1021721442-umsatz.zahlart\",\"NativeReferenceName\":\"zahlart\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Betrag\"}},\"Function\":0},\"Name\":\"CountNonNull(20240527-1021721442-umsatz.Betrag)\",\"NativeReferenceName\":\"Summe von Betrag\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Verwendungszweck\"},\"Name\":\"20240527-1021721442-umsatz.Verwendungszweck\",\"NativeReferenceName\":\"Verwendungszweck\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"20240527-1021721442-umsatz.Beguenstigter/Zahlungspflichtiger\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"}}],\"isPinned\":true},{\"queryRefs\":[\"20240527-1021721442-umsatz.zahlart\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"zahlart\"}}],\"isPinned\":true},{\"queryRefs\":[\"20240527-1021721442-umsatz.Buchungstext\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"Buchungstext\"}}],\"isPinned\":true},{\"queryRefs\":[\"20240527-1021721442-umsatz.Verwendungszweck\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"''\"}}],\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Ausgabe'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Einnahme'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Neutral'\"}}],\"isToggled\":true}]},{\"identityValues\":[{\"Literal\":{\"Value\":\"'SCHECK IN DURLACH//KARLSRUHE-DURLACH/DE'\"}}],\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Ausgabe'\"}}],\"isToggled\":true}]},{\"identityValues\":[{\"Literal\":{\"Value\":\"'PayPal Europe S.a.r.l. et Cie S.C.A'\"}}],\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Ausgabe'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'FOLGELASTSCHRIFT'\"}}],\"isToggled\":true}]}]}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"backColorSecondary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"grid\":[{\"properties\":{\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"gridVertical\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"gridVerticalWeight\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"gridHorizontal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"gridHorizontalWeight\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"gridHorizontalColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter94b98bd9494a0390e730\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"main\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"''\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false},{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"Betrag\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"main\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Or\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Betrag\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"-9.99D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Betrag\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"9.99D\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 688.00,
+          "width": 592.00,
+          "x": 448.00,
+          "y": 24.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"76f7d93a8c09de91b182\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":32,\"z\":2000,\"width\":448,\"height\":656,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"20240527-1021721442-umsatz.Beguenstigter/Zahlungspflichtiger\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(20240527-1021721442-umsatz.Betrag)\"}],\"Series\":[{\"queryRef\":\"20240527-1021721442-umsatz.zahlart\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"main\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"},\"Name\":\"20240527-1021721442-umsatz.Beguenstigter/Zahlungspflichtiger\",\"NativeReferenceName\":\"Beguenstigter/Zahlungspflichtiger\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Betrag\"}},\"Function\":0},\"Name\":\"CountNonNull(20240527-1021721442-umsatz.Betrag)\",\"NativeReferenceName\":\"Summe von Betrag\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"zahlart\"},\"Name\":\"20240527-1021721442-umsatz.zahlart\",\"NativeReferenceName\":\"zahlart\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Betrag\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"zahlart\"}},\"Right\":{\"Literal\":{\"Value\":\"'Ausgabe'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#4E9E11'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"zahlart\"}},\"Right\":{\"Literal\":{\"Value\":\"'Einnahme'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"main\"}},\"Property\":\"zahlart\"}},\"Right\":{\"Literal\":{\"Value\":\"'Neutral'\"}}}}}]}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"optimizeLabelDisplay\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableDetailDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 656.00,
+          "width": 448.00,
+          "x": 0.00,
+          "y": 32.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"ba8024411627383268d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1104,\"y\":24,\"z\":0,\"width\":176,\"height\":104,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"20240527-1021721442-umsatz.Betrag\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"main\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Betrag\"},\"Name\":\"20240527-1021721442-umsatz.Betrag\",\"NativeReferenceName\":\"Ausgaben\"}]},\"columnProperties\":{\"20240527-1021721442-umsatz.Betrag\":{\"displayName\":\"Ausgaben\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"-583.5914966349749D\"}}},\"numericEnd\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"main\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Betrag\"}},\"Right\":{\"Literal\":{\"Value\":\"-583.5914966349749D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":4,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Betrag\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 104.00,
+          "width": 176.00,
+          "x": 1104.00,
+          "y": 24.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"be78fe86729e4646cd5a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040,\"y\":128,\"z\":3000,\"width\":240,\"height\":584,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"20240527-1021721442-umsatz.Beguenstigter/Zahlungspflichtiger\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"main\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"},\"Name\":\"20240527-1021721442-umsatz.Beguenstigter/Zahlungspflichtiger\",\"NativeReferenceName\":\"Beguenstigter/Zahlungspflichtiger\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"-583.5914966349749D\"}}},\"numericEnd\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"main\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"Beguenstigter/Zahlungspflichtiger\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"''\"}}],[{\"Literal\":{\"Value\":\"'Annel Kunze'\"}}]]}}}}}]}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 584.00,
+          "width": 240.00,
+          "x": 1040.00,
+          "y": 128.00,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "AccessibleTidal"
+}
